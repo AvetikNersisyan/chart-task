@@ -7,6 +7,7 @@ const LineChart = ({data, options}) => {
     return (
         <div className={"line-chart"}>
             <Line
+                // className={"line-chart"}
                 data={{
                     labels: data.map((item) => item.id),
                     datasets: LABELS.map(item => ({

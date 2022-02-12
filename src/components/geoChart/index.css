@@ -1,0 +1,18 @@
+.geo-chart {
+    width: 30%;
+}
+
+.geo-chart canvas {
+    /*height: 150px;*/
+    width: 100%;
+    /*height: 500px;*/
+}
+
+@media screen and (max-width: 800px) {
+    .geo-chart {
+        width: 90%;
+        height: 400px;
+    }
+}
+
+

@@ -1,6 +1,16 @@
 .pie-chart {
-    position: relative;
-    width: auto;
-    height: 50%;
-
+    width: 30%;
 }
+
+.pie-chart canvas {
+    height: 150px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .pie-chart {
+        width: 90%;
+    }
+}
+
+

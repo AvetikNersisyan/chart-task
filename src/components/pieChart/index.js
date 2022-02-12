@@ -19,7 +19,17 @@ const PieChart = ({data}) => {
                 ]
             }} options={{
                 ...options,
-
+                plugins: {
+                    legend: {
+                        position: "bottom",
+                        align: "end",
+                        labels: {
+                            borderWidth: 0,
+                            usePointStyle: true,
+                            pointStyle: "circle"
+                        }
+                    }
+                }
 
             }}/>
         </div>

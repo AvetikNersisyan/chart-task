@@ -1,9 +1,9 @@
-export const userData = [
+export const lineData = [
     {
         id: 1,
         year: 2001,
         clicks: 11,
-        pageViews: -22,
+        pageViews: -20,
         signUps: 11,
     },
     {
@@ -18,8 +18,8 @@ export const userData = [
     {
         id: 3,
         year: 2001,
-        clicks: 10,
-        pageViews: 5,
+        clicks: 2,
+        pageViews: -5,
         signUps: 7
     },
     {
@@ -33,7 +33,7 @@ export const userData = [
         id: 5,
         year: 2001,
         clicks: 21,
-        pageViews: 16,
+        pageViews: -16,
         signUps: 3
     },
     {
@@ -41,14 +41,14 @@ export const userData = [
         year: 2001,
         clicks: 1,
         pageViews: 17,
-        signUps: 2
+        signUps: 20
     },
     {
         id: 7,
         year: 2001,
         clicks: 8,
-        pageViews: 4,
-        signUps: 15
+        pageViews: 40,
+        signUps: -15
     },
 
 ];
@@ -70,7 +70,7 @@ export const PIE_LABELS = [
 ];
 
 
-export const PIE_DATA = userData.reduce((data, item) => {
+export const PIE_DATA = lineData.reduce((data, item) => {
     data[0] += item.pageViews;
     data[1] += item.clicks;
     data[2] += item.signUps;
@@ -86,18 +86,27 @@ export const pairings = {
 
 
 export const options = {
+    maintainAspectRatio: false,
 
     elements: {
         point: {
             radius: 4,
             hoverRadius: 5,
-            padding: 20
+            spanGaps: true,
+            borderJoinStyle: "bevel",
+            // backgroundColor: Chart,
+            padding: 5
         },
         line: {
             borderJoinStyle: "bevel",
         }
     },
     responsive: true,
+    scales: {
+        x: {
+            display: false
+        }
+    },
     plugins: {
         legend: {
             display: true,
@@ -107,11 +116,36 @@ export const options = {
                 boxWidth: 10,
                 boxHeight: 10,
                 color: "white",
-                background: "blue"
-
+             
             },
 
         }
     }
 };
 
+
+export const mapOptions = {
+    maintainAspectRatio: false,
+    showOutline: true,
+    showGraticule: false,
+
+    plugins: {
+        legend: {
+            display: false
+        },
+    },
+    geo: {
+        colorScale: {
+            display: true,
+        },
+    },
+    scales: {
+        xy: {
+            // projection: 'equalEarth'
+            projection: 'equalEarth'
+        }
+    }
+};
+export const worldRevenue = [
+    100, 150, 220, 350, 450
+];

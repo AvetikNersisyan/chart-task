@@ -4,11 +4,12 @@
     width: 100vw;
     /*height: 300px !important;*/
     background: #2A2A2A;
+    flex-wrap: wrap;
 }
 
 @media screen  and (max-width: 800px) {
     .charts {
-        flex-direction: column;
+
         /*width: 100vw;*/
     }
 
