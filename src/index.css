@@ -12,7 +12,9 @@
 }
 
 .main-content-wrapper {
-    margin-top: 5em;
+    margin-top: 0em;
+    width: calc(100vw - 67px);
+    margin-left: 50px;
 }
 
 
