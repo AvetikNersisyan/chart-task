@@ -13,6 +13,10 @@
     /*width: 300px;*/
 }
 
+.main-content-wrapper {
+    margin-top: 5em;
+}
+
 
 @media screen and (max-width: 600px) {
     .partner-info-wrapper {

@@ -7,6 +7,7 @@ import {setLineData, setSummary, setTableData} from "./redux/ducks/partnerDataDu
 
 import "./index.css";
 import SummaryData from "./components/summaryData";
+import Header from "./components/header";
 
 function App() {
     const dispatch = useDispatch();
@@ -24,13 +25,17 @@ function App() {
 
     return (
         <>
-            <SummaryData/>
-            <Charts/>
-            <div className={"partner-info-wrapper"}>
-                <Table tableTitle={"Top Affiliates"}/>
-                <Table tableTitle={"Signups"}/>
-                <Table tableTitle={"Pending Commissions"}/>
-            </div>
+            <Header/>
+            <span className={"main-content-wrapper"}>
+                   <SummaryData/>
+                   <Charts/>
+                   <section className={"partner-info-wrapper"}>
+                       <Table tableTitle={"Top Affiliates"}/>
+                       <Table tableTitle={"Signups"}/>
+                       <Table tableTitle={"Pending Commissions"}/>
+                   </section>
+            </span>
+
 
         </>
 
