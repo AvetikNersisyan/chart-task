@@ -3,9 +3,10 @@ import Chart from 'chart.js/auto';
 import Table from "./components/table";
 import {useEffect} from "react";
 import {useDispatch} from "react-redux";
-import {setLineData, setTableData} from "./redux/ducks/partnerDataDuck";
+import {setLineData, setSummary, setTableData} from "./redux/ducks/partnerDataDuck";
 
 import "./index.css";
+import SummaryData from "./components/summaryData";
 
 function App() {
     const dispatch = useDispatch();
@@ -16,12 +17,14 @@ function App() {
             .then(res => {
                 dispatch(setLineData(res.lineData));
                 dispatch(setTableData(res.tableData));
+                dispatch(setSummary(res.summaryData));
             });
     }, []);
 
 
     return (
         <>
+            <SummaryData/>
             <Charts/>
             <div className={"partner-info-wrapper"}>
                 <Table tableTitle={"Top Affiliates"}/>

@@ -1,11 +1,16 @@
 .partner-info {
+    table-layout: auto;
+
     width: 100%;
-    margin: -2px;
     border-left: 1px solid rgba(223, 228, 238, 1);
+    border-collapse: collapse;
+
 }
 
 .partner-info td {
     padding: 5px 15px;
+    max-width: 100%;
+    white-space: nowrap;
 }
 
 .partner-info > tbody {

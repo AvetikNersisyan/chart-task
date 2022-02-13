@@ -81,6 +81,12 @@
       "profit": 45,
       "commision": "Adelina"
     }
-  ]
+  ],
+  "summaryData": {
+    "signUps": 28,
+    "profit": 3000,
+    "commission": 150,
+    "pendingCom": 270
+  }
 }
 
