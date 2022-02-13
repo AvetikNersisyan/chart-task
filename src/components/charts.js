@@ -1,5 +1,5 @@
 import LineChart from "./lineChart";
-import {lineData, mapOptions, options, PIE_DATA} from "../helper/constants";
+import {mapOptions, options} from "../helper/constants";
 import PieChart from "./pieChart";
 import {useSelector} from "react-redux";
 import GeoChart from "./geoChart/geoChart";
@@ -8,7 +8,7 @@ import "./index.css";
 import {useMemo} from "react";
 
 
-const Charts = () => {
+const Charts = (factory, deps) => {
 
 
     const lineData = useSelector(state => state.PartnerDataDuck.lineData);
@@ -22,11 +22,11 @@ const Charts = () => {
 
 
     return (
-        <div className={"charts"}>
+        <section className={"charts"}>
             <LineChart data={lineData} options={options}/>
             <PieChart data={pieData} options={options}/>
             <GeoChart options={mapOptions}/>
-        </div>
+        </section>
     );
 };
 

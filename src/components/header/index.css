@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    height: 75px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.header div {
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+.divider {
+    height: 40px;
+    color: #878787;
+    width: 100%;
+}
+
+.favouriteBtn {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 3px;
+    padding: 5px 20px;
+    align-content: end;
+    background: rgba(236, 236, 236, 1);
+    justify-content: flex-end;
+    cursor: pointer;
+
+}
+
+.favouriteBtn img {
+    height: 16px;
+}
