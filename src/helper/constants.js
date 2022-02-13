@@ -116,7 +116,7 @@ export const options = {
                 boxWidth: 10,
                 boxHeight: 10,
                 color: "white",
-             
+
             },
 
         }
@@ -126,22 +126,22 @@ export const options = {
 
 export const mapOptions = {
     maintainAspectRatio: false,
-    showOutline: true,
+    showOutline: false,
     showGraticule: false,
 
     plugins: {
         legend: {
             display: false
         },
+
     },
     geo: {
         colorScale: {
-            display: true,
+            display: false,
         },
     },
     scales: {
         xy: {
-            // projection: 'equalEarth'
             projection: 'equalEarth'
         }
     }
