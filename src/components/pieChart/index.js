@@ -1,7 +1,8 @@
 import {Doughnut} from "react-chartjs-2";
-import {COLORS, LABELS, options, pairings, PIE_DATA, PIE_LABELS} from "../../helper/constants";
+import {COLORS, options, PIE_LABELS} from "../../helper/constants";
 
 import "./index.css";
+import {memo} from "react";
 
 const PieChart = ({data}) => {
 
@@ -39,4 +40,4 @@ const PieChart = ({data}) => {
 };
 
 
-export default PieChart;
+export default memo(PieChart);

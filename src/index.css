@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: metric-semibold, sans-serif;
+}
+
+.partner-info-wrapper {
+
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*gap: 1em;*/
+    /*width: 300px;*/
+}
+
+
+@media screen and (max-width: 600px) {
+    .partner-info-wrapper {
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,58 @@
+.summary {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.summary-item {
+    flex: 1 1 auto;
+    border: 1px solid rgba(212, 212, 212, 1);
+    border-right: none;
+    padding: 2em 0 5em 0;
+    /*border: 1px solid black;*/
+    min-width: 250px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.summary-item h1 {
+    font-size: 50px;
+}
+
+.summary-item div {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.summary-item div img {
+    height: 16px;
+}
+
+.signups h1 {
+    color: #00ACAC;
+}
+
+.profit h1 {
+    color: #1F7BB6;
+}
+
+.commission h1 {
+    color: #FBCF71;
+}
+
+.pending-commission h1 {
+    color: #00ACAC;
+}

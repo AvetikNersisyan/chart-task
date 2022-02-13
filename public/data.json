@@ -1,0 +1,92 @@
+{
+  "lineData": [
+    {
+      "id": 1,
+      "year": 2001,
+      "clicks": 11,
+      "pageViews": -20,
+      "signUps": 11
+    },
+    {
+      "id": 2,
+      "year": 2001,
+      "clicks": -10,
+      "pageViews": 8,
+      "signUps": 13
+    },
+    {
+      "id": 3,
+      "year": 2001,
+      "clicks": 2,
+      "pageViews": -5,
+      "signUps": 7
+    },
+    {
+      "id": 4,
+      "year": 2001,
+      "clicks": 10,
+      "pageViews": 30,
+      "signUps": 2
+    },
+    {
+      "id": 5,
+      "year": 2001,
+      "clicks": 21,
+      "pageViews": -16,
+      "signUps": 3
+    },
+    {
+      "id": 6,
+      "year": 2001,
+      "clicks": 1,
+      "pageViews": 17,
+      "signUps": 20
+    },
+    {
+      "id": 7,
+      "year": 2001,
+      "clicks": 8,
+      "pageViews": 40,
+      "signUps": -15
+    }
+  ],
+  "tableData": [
+    {
+      "id": 1007,
+      "userName": "Simona",
+      "profit": 45,
+      "commision": "Adelina"
+    },
+    {
+      "id": 1008,
+      "userName": "Ariana",
+      "profit": 45,
+      "commision": "Adelina"
+    },
+    {
+      "id": 1009,
+      "userName": "Levon",
+      "profit": 45,
+      "commision": "Adelina"
+    },
+    {
+      "id": 1010,
+      "userName": "Mike",
+      "profit": 45,
+      "commision": "Adelina"
+    },
+    {
+      "id": 1011,
+      "userName": "Pompeo",
+      "profit": 45,
+      "commision": "Adelina"
+    }
+  ],
+  "summaryData": {
+    "signUps": 28,
+    "profit": 3000,
+    "commission": 150,
+    "pendingCom": 270
+  }
+}
+
