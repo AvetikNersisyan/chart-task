@@ -28,14 +28,14 @@ const SummaryData = () => {
                 </div>
             </span>
             <span className={"summary-item commission"}>
-                  <h1> {commission}</h1>
+                  <h1> ${commission}</h1>
                     <div>
                     <img src={commissionURL}/>
                    <h3>Commissions</h3>
                 </div>
             </span>
             <span className={"summary-item pending-commission"}>
-                  <h1> {pendingCom}</h1>
+                  <h1> ${pendingCom}</h1>
                     <div>
                     <img src={pendingURL}/>
                    <h3>Pending Commissions</h3>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import {memo, useEffect, useState} from "react";
 import * as ChartGeo from "chartjs-chart-geo";
 import {Chart} from "react-chartjs-2";
 
@@ -7,7 +7,7 @@ import "./index.css";
 const GeoChart = ({options}) => {
 
     const [world, setWorld] = useState([]);
-    
+
     useEffect(() => {
         fetch("https://unpkg.com/world-atlas@2.0.2/countries-50m.json")
             .then(res => res.json())
@@ -44,4 +44,4 @@ const GeoChart = ({options}) => {
     );
 };
 
-export default React.memo(GeoChart);
+export default memo(GeoChart);

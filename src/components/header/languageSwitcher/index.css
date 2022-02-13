@@ -1,0 +1,16 @@
+.flags {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100px;
+    z-index: 111;
+    position: static;
+
+}
+
+
+.lang-name {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
