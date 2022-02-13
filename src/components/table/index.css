@@ -1,7 +1,7 @@
 .partner-info {
     /*table-layout: auto;*/
 
-    width: calc(92vw / 3);
+    width: calc(100% / 3);
     border-left: 1px solid rgba(223, 228, 238, 1);
     border-collapse: collapse;
 
