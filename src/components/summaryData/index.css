@@ -14,7 +14,7 @@
     border: 1px solid rgba(212, 212, 212, 1);
     border-right: none;
     padding: 2em 0 5em 0;
-    min-width: 200px;
+    min-width: 250px;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
     .summary-item {
         flex: 2 2 auto;
         min-width: 150px;
-        max-height: 150px;
+        max-height: 50px;
     }
 
     .summary-item h1 {
