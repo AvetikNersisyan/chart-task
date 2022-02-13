@@ -1,5 +1,6 @@
 import LanguageSwitcher from "./languageSwitcher";
 import "./index.css";
+import Account from "./account";
 
 const Header = () => {
     return (
@@ -7,6 +8,7 @@ const Header = () => {
             <div className={"language-switcher"}>
                 <LanguageSwitcher/>
             </div>
+            <Account user={"Max"}/>
         </header>
     );
 };
