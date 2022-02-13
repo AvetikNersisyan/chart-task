@@ -8,7 +8,7 @@ import "./index.css";
 import {useMemo} from "react";
 
 
-const Charts = (factory, deps) => {
+const Charts = () => {
 
 
     const lineData = useSelector(state => state.PartnerDataDuck.lineData);

@@ -13,7 +13,7 @@
     flex: 1 1 auto;
     border: 1px solid rgba(212, 212, 212, 1);
     border-right: none;
-    padding: 2em 0 5em 0;
+    padding: 1em 0 2em 0;
     min-width: 250px;
     width: 20%;
     display: flex;
@@ -60,8 +60,8 @@
 @media screen and (max-width: 800px) {
     .summary-item {
         flex: 2 2 auto;
-        min-width: 150px;
-        max-height: 50px;
+        min-width: 100px;
+        height: 5em;
     }
 
     .summary-item h1 {
